@@ -89,7 +89,7 @@ const GameView = ({ viewArea, puzzleArea, isSolving  }) => {
 
         return (
             <div className="wholepage">
-                <h1 className="pagetitle"> React 15-puzzle </h1>
+                <h1 className="pagetitle"> Your Puzzle Awaits </h1>
                 <div className="game-area"  >
                     <div className="game-container"  style={ gamecontainerstyle }>
                         <UI navStyle={ uistyle } buttonStyle={ buttonstyle }/>
