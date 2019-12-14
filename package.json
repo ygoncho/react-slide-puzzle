@@ -56,7 +56,7 @@
   },
   "devDependencies": {
     "prop-types": "^15.6.0",
-    "worker-loader": "1.1.0"
+    "worker-loader": "^1.1.0"
   },
   "jest": {
     "collectCoverageFrom": [
