@@ -98,7 +98,7 @@ const GameView = ({ viewArea, puzzleArea, isSolving  }) => {
                     </div>
                 </div>
                 <div className="writeup">
-                    <p className="pagedescription">Every good challenge ends with a slide puzzle. Can you uncover the hidden image and get your reward?</p>
+                    <p className="pagedescription">Every good challenge ends with a slide puzzle. This is your last quest. Use what you have found. Through the order of the puzzle, you can go to the engine that claims your prize.</p>
                     <p className="pagedescription">Nati Ready? Go!</p>
                 </div>
             </div>
