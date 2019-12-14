@@ -33,17 +33,17 @@ class GridModel {
 
     buildNew = (size) => {
         let tiles = getInitTiles(size);
-        while(getMisplaced(tiles) === 0 || !this.isSolvable(tiles)){
-
-            shuffleArray(tiles);
-        }
+        //while(getMisplaced(tiles) === 0 || !this.isSolvable(tiles)){
+        //
+        //    shuffleArray(tiles);
+        //}
         
         //console.log("shuffled? " + tiles);
         //worst case tests
         //tiles = [16,12,10,13,15,11,14,9,3,7,6,2,4,8,5,1];
         //tiles = [16,12,9,13,15,11,10,14,3,7,2,5,4,8,6,1];
         //tiles = [14,2,9,8,16,1,12,13,6,10,15,3,7,11,5,4];
-        //tiles = [11,5,10,9,14,4,8,13,2,6,1,16,12,7,15,3];
+        tiles = [11,5,10,9,14,4,8,13,2,6,1,16,12,7,15,3];
         //tiles = [1,5,9,13,2,6,10,14,3,7,11,15,4,8,12,16];
         //tiles = [3,2,9,13,7,12,4,14,1,11,16,6,8,15,10,5];
         //tiles = [4,2,14,9,10,8,7,6,3,1,15,12,11,16,13,5];

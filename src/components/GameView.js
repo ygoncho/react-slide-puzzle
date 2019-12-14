@@ -98,9 +98,8 @@ const GameView = ({ viewArea, puzzleArea, isSolving  }) => {
                     </div>
                 </div>
                 <div className="writeup">
-                    <p className="pagedescription">A classic 8 or 15 puzzle that I built with React that has interactive sliding tiles. The ai solver uses the <a href="https://en.wikipedia.org/wiki/Fringe_search">fringe search </a>algorithm and manhattan distance heuristic, which is sufficient for the 8 piece puzzle. For the 15 piece a non-optimal but short solution is found by breaking up the problem and stringing together those solutions, an idea based on <a href="https://pdfs.semanticscholar.org/21be/9f73ab7afb7991b8cfbdaf96e4124a0bec89.pdf">this</a> paper by Ian Parberry.</p>
-                    <p className="pagedescription">While most configurations of the 15 puzzle are solved within a few seconds, the hardest can take up from 30 to 50 seconds. For this reason the solution is carried out in a web worker so the browser doesn't lock up. This puzzle works great on mobile devices due to the responsive design of the layout and memory efficient ai.</p>
-
+                    <p className="pagedescription">Every good challenge ends with a slide puzzle. Can you uncover the hidden image and get your reward?</p>
+                    <p className="pagedescription">Nati Ready? Go!</p>
                 </div>
             </div>
         );
