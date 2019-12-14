@@ -10,6 +10,8 @@ const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeM
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const getClientEnvironment = require('./env');
+//var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+
 const paths = require('./paths');
 
 // Webpack uses `publicPath` to determine where the app is being served from.
@@ -94,6 +96,7 @@ module.exports = {
       'react-native': 'react-native-web',
     },
     plugins: [
+      //new CaseSensitivePathsPlugin(),
       // Prevents users from importing files from outside of src/ (or node_modules/).
       // This often causes confusion because we only process files within src/ with babel.
       // To fix this, we prevent you from importing files out of src/ -- if you'd like to,
@@ -106,7 +109,7 @@ module.exports = {
     strictExportPresence: true,
     rules: [
         {
-            test: /\.worker\.js$/,
+            test: /\.(worker|Worker)\.js$/,
             use: { loader: 'worker-loader', options: { inline: true } }
         },
       // TODO: Disable require.ensure as it's not a standard language feature.
