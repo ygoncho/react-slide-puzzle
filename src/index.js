@@ -18,13 +18,13 @@ const initialState = {
     gridSize: 4,
     tiles: null,
     puzzleArea: { w:768, h:768 },
-    displayType: 'Numbers',
+    displayType: "Image",
     solution: null,
     isSolving: false,
     showNext: false,
     isShowingSolution: false,
-    imgSrc: null,
-    images: [],
+    imgSrc: "/static/media/kitor.d615e386.jpeg",
+    images: { allKeys: ["kitor.jpg"], "kitor.jpg": "/static/media/kitor.d615e386.jpg"},
     defaultImg: null,
     dragIndex: null,
     dragStart: null,
@@ -45,6 +45,7 @@ const store = createStore(
 
 
 store.dispatch(startNewPuzzle(4));
+
 
 render(
     <Root store={store} />,

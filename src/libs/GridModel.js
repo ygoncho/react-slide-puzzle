@@ -37,7 +37,7 @@ class GridModel {
 
             shuffleArray(tiles);
         }
-
+        
         //console.log("shuffled? " + tiles);
         //worst case tests
         //tiles = [16,12,10,13,15,11,14,9,3,7,6,2,4,8,5,1];
