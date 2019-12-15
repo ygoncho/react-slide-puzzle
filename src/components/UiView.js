@@ -13,3 +13,7 @@ const UiView = (props) => (
 );
 
 export default UiView;
+//        <button onClick={ props.onDisplayClick } style={ props.buttonStyle }>{ props.selectType }</button>
+//        <button onClick={ props.onSolveClick } style={ props.buttonStyle }>Solve</button>
+//        <button onClick={ props.onNewClick } style={ props.buttonStyle }>New</button>
+//        <button onClick={ props.onSizeClick } style={ props.buttonStyle }>{ props.selectSize } puzzle</button>
